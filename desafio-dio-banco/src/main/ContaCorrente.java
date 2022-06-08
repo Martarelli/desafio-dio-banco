@@ -1,5 +1,10 @@
 public class ContaCorrente extends Conta {
-    public void imprimirExtrato(){
+	
+    public ContaCorrente(Cliente cliente) {
+		super(cliente);
+	}
+
+	public void imprimirExtrato(){
         System.out.println("=== EXTRATO CONTA CORRENTE ===");
         super.imprimirInfosComuns();
     }
